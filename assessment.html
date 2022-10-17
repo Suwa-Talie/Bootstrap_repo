@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>talie</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--start of carousel-->
+
+    <div id="carousel" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../Images/model.jpg" class="d-block w-100" height="900" alt="..." >
+                
+            </div>
+            <div class="carousel-item">
+                <img src="../Images/pancakes.jpg" class="d-block w-100" height="900" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="../Images/flower.jpg" class="d-block w-100" height="900" alt="...">
+                
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--end of carousel-->
+
+    <br>
+
+
+    <div class="row">
+        <div class="col-1 p-5  ">
+
+        </div>
+        <div class="col-4 p-5 border border-info ">
+            <form action="">
+                <h2>Register</h2>
+                <div class="mb-3 mt-3">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" placeholder="Enter Email" name="email" id="email" class="form-control"
+                        value="adesuwa@gmail.com">
+
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="password">Password</label>
+                    <input type="password" placeholder="Enter Password" name="password" id="password"
+                        class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please enter a password
+
+                    </div>
+                    <div class="valid-feedback">
+                        success
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="mb-3">
+                    <label class="form-label" for="country">Select your country</label>
+                    <select name="country" id="country" class="form-select">
+                        <option selected>Nigeria</option>
+                        <option value="rice">United Kingdom</option>
+                        <option value="beans">United States</option>
+                        <option value="rice">Canada</option>
+                        <option value="rice">Ghana</option>
+                        <option value="rice">South Africa</option>
+                        <option value="rice">rice</option>
+                        <option value="rice">rice</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="state">Select your state of origin</label>
+                    <select name="state" id="state" class="form-select">
+                        <option selected>Delta</option>
+                        <option value="rice">Lagos</option>
+                        <option value="beans">Enugu</option>
+                        <option value="rice">Imo</option>
+                        <option value="rice">Abuja</option>
+
+                    </select>
+                </div>
+                <button class="btn btn-success w-100 mt-5 mb-4"> Register</button>
+
+            </form>
+
+        </div>
+        <div class="col-2 p-5  ">
+
+        </div>
+        <div class="col-4 p-5 border border-info ">
+            <form action="">
+                <h2>Login details</h2>
+                <div class="form-floating mt-3 mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="Password" placeholder="">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <div class="mt-3 ">
+                    <p> <small> Forgot password ?</small> </p>
+                </div>
+
+                <button class="btn btn-primary w-100 mt-5 mb-4">Login</button>
+
+
+            </form>
+
+
+        </div>
+        <div class="col-1 p-5  ">
+
+        </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+</html>
+    
